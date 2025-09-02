@@ -1,0 +1,20 @@
+# SuperDuper Project Dependencies
+# Core data science and visualization packages
+pandas>=2.0.0
+matplotlib>=3.7.0
+numpy>=1.26.0
+
+# Jupyter notebook support
+jupyter>=1.0.0
+ipykernel>=6.25.0
+
+# Optional: Additional useful packages for data analysis
+seaborn>=0.12.0  # Enhanced statistical visualizations
+plotly>=5.15.0   # Interactive plots
+requests>=2.31.0 # For API calls if needed
+
+# Development tools
+black>=23.0.0    # Code formatting
+flake8>=6.0.0    # Linting
+
+# Note: sqlite3 is built into Python and doesn't need to be installed separately
