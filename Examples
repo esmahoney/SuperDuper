@@ -1,0 +1,28 @@
+# Here are some basic SQL concepts and queries to get you started.
+# A valuable SQL resource is https://www.w3schools.com/sql/default.asp this will give you some understand into how statements are constructed.
+
+# For these examples I have some sample databases that are available in the repository. These are relational datbases. 
+
+# Lets talk about relationships and how to build queries to retrieve info from multiple tables. 
+There are 3 types of database relationships: One-to-one, One-to-many, Many-to-many and the relationships are expressed by keys with foreign key constraints. 
+Primary Key (PK): A unique identifier for a row in a table. ex: author.id
+Foreign Key (FK): A column(s) in one table that references the primary key in another table. ex. books.author_id -> authors.id
+
+The relationship is expressed in the schema with a foreign key definition, something like:
+ALTER TABLE books
+ADD CONSTRAINT fk_books_authors
+FOREIGN KEY (author_id) REFERENCES authors(id);
+This tells you that books.author_id must match an existing authors.id.
+
+I mention this because as a basis to understanding how relationships between the tables are known - it is not always immediately clear. Especially as you are just starting to explore databases and their designs.
+
+When building queries, it's important to understand and read subqueries [IN] these are helpful to be able to write a statement that encompasses your entire query and not individual pieces that you would have to remember and reuse portions. If you are anything like me, remembering is not your strong suit. 
+For example, let's say you want to find all books from a specific author that was published by a specific publisher. You will need data from the publishers table and the authors table. To start you could try to retrieve the id of the publisher. 
+sqlite> SELECT "id" FROM "publishers"
+   ...> WHERE "publisher" = 'Fitzcarraldo Editions';
+5
+and then create another query to get the author id
+sqlite> SELECT "id" FROM "authors"
+   ...> WHERE "name" = 'Daniel Kehlmann';
+17
+and then finally create another query to get the number of books the publisher has published by a specific author:
