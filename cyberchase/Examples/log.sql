@@ -109,3 +109,30 @@ SELECT "name" FROM "schools" WHERE "type" = 'Public School' AND "state" = 'MA';
 -- Find name of districts that are no longer operational.
 SELECT "name"  FROM "districts" WHERE "name" LIKE '%(non-op)%';
 -- Returns a long list of 121 districts
+-- Get average per-pupil expenditure for all school districts in Massachusetts
+SELECT "district_id", AVG("per_pupil_expenditure") AS "Average District Per-Pupil Expenditure"
+   ...> FROM "expenditures"
+   ...> GROUP BY "district_id";
+-- This returns a long list of 178 districts with their average per-pupil expenditure
+-- Find 10 cities with the highest number of public schools in Massachusetts
+SELECT "city", COUNT("id") AS "Number of Public Schools" FROM "schools"
+   ...> WHERE "type" = 'Public School' AND "state" = 'MA'
+   ...> GROUP BY "city"
+   ...> ORDER BY "Number of Public Schools" DESC
+   ...> LIMIT 10;
+   Springfield|64
+Worcester|47
+Lynn|27
+New Bedford|26
+Lowell|26
+Lawrence|26
+Dorchester|25
+Brockton|24
+Quincy|19
+Fall River|18
+-- Find cities with 3 or fewer public schools in Massachusetts
+SELECT "city", COUNT("id") AS "Number of Public Schools" FROM "schools"
+   ...> WHERE "type" = 'Public School' AND "state" = 'MA'
+   ...> GROUP BY "city"
+   ...> HAVING "Number of Public Schools" <= 3
+   ...> ORDER BY "Number of Public Schools" ASC;
