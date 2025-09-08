@@ -1,4 +1,4 @@
-# Here are some basic SQL concepts and queries to get you started.
+Here are some basic SQL concepts and queries to get you started.
 # A valuable SQL resource is https://www.w3schools.com/sql/default.asp this will give you some understand into how statements are constructed.
 
 # For these examples I have some sample databases that are available in the repository. These are relational datbases. 
@@ -26,3 +26,4 @@ sqlite> SELECT "id" FROM "authors"
    ...> WHERE "name" = 'Daniel Kehlmann';
 17
 and then finally create another query to get the number of books the publisher has published by a specific author:
+--
