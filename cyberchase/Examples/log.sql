@@ -102,4 +102,10 @@ SELECT * FROM "scans" WHERE "package_id" = 9523 AND "address_id" = 9873;
 SELECT "name" FROM "drivers" WHERE "id" = 11;
 Maegan
 
-
+--*** Dese ***
+-- Find the names all public schools in Massachusetts
+SELECT "name" FROM "schools" WHERE "type" = 'Public School' AND "state" = 'MA';
+-- This returns a long list of 1761 public schools
+-- Find name of districts that are no longer operational.
+SELECT "name"  FROM "districts" WHERE "name" LIKE '%(non-op)%';
+-- Returns a long list of 121 districtscd
