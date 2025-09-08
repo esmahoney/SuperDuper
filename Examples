@@ -25,4 +25,36 @@ and then create another query to get the author id
 sqlite> SELECT "id" FROM "authors"
    ...> WHERE "name" = 'Daniel Kehlmann';
 17
-and then finally create another query to get the number of books the publisher has published by a specific author:
+
+***Now let's talk about JOINS***
+example query:
+ SELECT * FROM "sea_lions"
+   ...> JOIN "migrations" ON "migrations"."id" = "sea_lions"."id";
+INNER JOIN - Is usually the default join and refers to pairing matching values from both tables
+LEFT JOIN - priorities the data on the "left" or first table you start with
+RIGHT JOIN - priorities the data on the "right"
+FULL JOIN - joins records where there's a match in left or right table
+NATURAL JOIN - works to help simplify queries by removing need for JOIN conditions.
+   - use to combine tables with identical columns
+   - DO NOT use if these columns don't share same context.
+
+***Exploring Sets***
+
+INTERSECT
+SELECT "name" FROM "authors"
+   ...> INTERSECT
+   ...> SELECT "name" FROM "translators";
+UNION
+SELECT "name" FROM "translators"
+   ...> UNION
+   ...> SELECT "name" FROM "authors";
+EXCEPT
+SELECT "name" FROM "authors"
+   ...> EXCEPT
+   ...> SELECT "name" FROM "translators";
+
+Another example using subqueries:
+
+
+***Grooving with Groups***
+

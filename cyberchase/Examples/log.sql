@@ -108,4 +108,4 @@ SELECT "name" FROM "schools" WHERE "type" = 'Public School' AND "state" = 'MA';
 -- This returns a long list of 1761 public schools
 -- Find name of districts that are no longer operational.
 SELECT "name"  FROM "districts" WHERE "name" LIKE '%(non-op)%';
--- Returns a long list of 121 districtscd
+-- Returns a long list of 121 districts
