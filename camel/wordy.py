@@ -33,6 +33,12 @@ def main ():
             print("You get", points, "points!")
             remaining_words.pop(remaining_words.index(word)) #remove word from remaining_words
             print("You can make", len(remaining_words), "more valid words with the given letters.")
+        if word == "OATIER":
+            print("You found the special word OATIER!")
+            print("You get 10 points!")
+            #remove all remaining words from remaining_words
+            remaining_words.clear()
+            print("Za warudo! You win!")
         elif word in valid_words and word not in remaining_words:
             print("You already found that word!")
             print("You can make", len(remaining_words), "more valid words with the given letters.")
@@ -55,3 +61,4 @@ if __name__ == "__main__":
 #5. Add a timer to limit the time user has to make words.
 #6. when time is up ask user if they want to play again.
 #7. Add a hint system to help user find words.
+#8. add feature that shows user all possible words when they finish the game.
