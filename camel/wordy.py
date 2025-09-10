@@ -31,7 +31,7 @@ def main ():
             print("Valid word!")
             points = len(word)
             print("You get", points, "points!")
-            remaining_words.remove(word)
+            remaining_words.pop(remaining_words.index(word)) #remove word from remaining_words
             print("You can make", len(remaining_words), "more valid words with the given letters.")
         elif word in valid_words and word not in remaining_words:
             print("You already found that word!")
