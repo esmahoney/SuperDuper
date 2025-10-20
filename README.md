@@ -1,8 +1,10 @@
 # SuperDuper Project
 
-A comprehensive learning journey combining Python programming fundamentals, SQL database operations, and data visualization. This project serves as a hands-on tutorial for developers learning to integrate multiple technologies including Python, SQL, data analysis, and web frameworks.
+A comprehensive learning journey combining Python programming fundamentals, SQL database operations, and data visualization. This project serves as a hands-on tutorial for developers learning to integrate multiple technologies including Python, SQL, data analysis, and web frameworks. 
 
-## 🎯 Project Overview
+Born out of the beginners frustration of finding a spot with easily understandable examples as well as links to additional resources and cheatsheets.
+
+## Project Overview
 
 This project is designed to demonstrate:
 - Python programming fundamentals (strings, integers, functions, conditionals)
@@ -11,7 +13,7 @@ This project is designed to demonstrate:
 - Integration of multiple tools in a cohesive project
 - Best practices for project organization and documentation
 
-## 📚 Learning Path
+## Learning Path
 
 The project follows a structured learning approach:
 
@@ -21,7 +23,7 @@ The project follows a structured learning approach:
 4. **Data Visualization** - Creating charts and graphs
 5. **Project Organization** - Professional development practices
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 SuperDuper/
@@ -40,7 +42,7 @@ SuperDuper/
 └── docs/                   # Additional documentation
 ```
 
-## 🛠️ Setup and Installation
+## Setup and Installation
 
 ### Prerequisites
 
@@ -76,7 +78,7 @@ SuperDuper/
    - Navigate to `SuperDuper.ipynb` in your browser
    - Start exploring the learning modules!
 
-## 📊 Sample Database
+## Sample Database
 
 The project includes a SQLite database (`data/cyberchase.db`) containing information about Cyberchase TV episodes with the following schema:
 
@@ -88,7 +90,7 @@ The project includes a SQLite database (`data/cyberchase.db`) containing informa
 - `air_date` - Original air date (YYYY-MM-DD)
 - `production_code` - PBS internal production ID
 
-## 🎓 Learning Modules
+## Learning Modules
 
 ### Python Fundamentals
 - String manipulation and formatting
@@ -108,7 +110,7 @@ The project includes a SQLite database (`data/cyberchase.db`) containing informa
 - Data processing with pandas
 - Statistical analysis and insights
 
-## 🚀 Getting Started
+## Getting Started
 
 1. Start with the main `SuperDuper.ipynb` notebook
 2. Follow the step-by-step learning modules
@@ -116,7 +118,7 @@ The project includes a SQLite database (`data/cyberchase.db`) containing informa
 4. Try modifying queries and visualizations
 5. Build your own analysis using the sample data
 
-## 🔧 Tools and Technologies
+## Tools and Technologies
 
 - **Python**: Core programming language
 - **SQLite**: Database for storing and querying data
@@ -125,7 +127,7 @@ The project includes a SQLite database (`data/cyberchase.db`) containing informa
 - **Jupyter**: Interactive development environment
 - **Git**: Version control (optional)
 
-## 📈 Future Enhancements
+## Future Enhancements
 
 Potential additions to expand the project:
 - Integration with external APIs
@@ -135,7 +137,7 @@ Potential additions to expand the project:
 - Advanced SQL operations
 - Deployment to cloud platforms
 
-## 🤝 Contributing
+## Contributing
 
 This is a learning project, but suggestions and improvements are welcome! Feel free to:
 - Report issues or bugs
@@ -143,16 +145,16 @@ This is a learning project, but suggestions and improvements are welcome! Feel f
 - Contribute example code
 - Improve documentation
 
-## 📝 License
+## License
 
 This project is for educational purposes. Feel free to use and modify for your learning journey.
 
 ## 🙏 Acknowledgments
 
-- Inspired by Harvard's CS50 Introduction to Programming with Python
+- Inspired by Harvard's CS50 Introduction to Programming with Python and SQL
 - Cyberchase database used for educational examples
 - Various online resources and tutorials mentioned in the notebook
 
 ---
 
-**Happy Learning!** 🎉
+**Happy Learning!**
