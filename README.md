@@ -149,7 +149,7 @@ This is a learning project, but suggestions and improvements are welcome! Feel f
 
 This project is for educational purposes. Feel free to use and modify for your learning journey.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Inspired by Harvard's CS50 Introduction to Programming with Python and SQL
 - Cyberchase database used for educational examples
